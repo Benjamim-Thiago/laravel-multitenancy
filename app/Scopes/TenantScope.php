@@ -15,7 +15,7 @@ class TenantScope implements Scope
      * @return void
      */
     public function apply(Builder $builder, Model $model) {
-      
+   
         $accountId = \Auth::user()->account_id;
         $builder->where('account_id', $accountId);
     }
