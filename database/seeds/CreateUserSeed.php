@@ -15,7 +15,15 @@ class CreateUserSeed extends Seeder
         User::create([
             "name"=>"Usuário 01",
             "email"=>"user1@gmail.com",
-            "password"=>bcrypt('123456')
+            "password"=>bcrypt('123456'),
+            "account_id" => 1
+        ]);
+
+        User::create([
+            "name"=>"Usuário 02",
+            "email"=>"user2@gmail.com",
+            "password"=>bcrypt('123456'),
+            "account_id" => 2
         ]);
     }
 }

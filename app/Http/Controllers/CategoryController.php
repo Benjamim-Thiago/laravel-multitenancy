@@ -14,6 +14,8 @@ class CategoryController extends Controller
      */
     public function index()
     {
+        //$account = \Auth::user()->account_id;
+
         $categories = Category::all();
         return view('categories.index',compact('categories'));
     }

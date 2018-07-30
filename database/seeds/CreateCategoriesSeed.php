@@ -11,31 +11,12 @@ class CreateCategoriesSeed extends Seeder
      */
     public function run()
     {
-        $category = Category::create([
-            "name" => "Eletroeletrônicos"
+        factory(\App\Category::class, 10)->create([
+            "account_id"=>1
         ]);
 
-        $category = Category::create([
-            "name" => "Informática"
-        ]);
-
-        $category = Category::create([
-            "name" => "Escritório"
-        ]);
-        $category = Category::create([
-            "name" => "Cama mesa e Banho"
-        ]);
-        $category = Category::create([
-            "name" => "Brinquedos"
-        ]);
-        $category = Category::create([
-            "name" => "Celulares"
-        ]);
-        $category = Category::create([
-            "name" => "Esporte"
-        ]);
-        $category = Category::create([
-            "name" => "Automóveis"
+        factory(\App\Category::class, 10)->create([
+            "account_id"=>2
         ]);
     }
 }
